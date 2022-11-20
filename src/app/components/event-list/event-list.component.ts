@@ -6,27 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./event-list.component.css'],
 })
 export class EventListComponent {
+
+
   events = [
     {
-      eventName: `Evento 01`,
-      eventLiteDescription: `Ipsum lorem`,
-      eventCategory: `Educação`,
-      eventGroup: `pastores`,
-      eventDate: '25/11/2022',
+      name: `Evento 01`,
+      liteDescription: `Ipsum lorem`,
+      category: `Educação`,
+      group: `pastores`,
+      date: '25/11/2022',
+      createDate: '25/11/2022',
+      status: `aguardando`,
+      link: `https://google.com`,
     },
     {
-      eventName: `Passeio no parque`,
-      eventLiteDescription: `descrição do eventodescrição do eventodescrição do eventodescrição do evento descrição do evento descrição do evento`,
-      eventCategory: `Confraternização`,
-      eventGroup: `Umadc`,
-      eventDate: '2/11/2022',
+      name: `Evento 01`,
+      liteDescription: `Ipsum lorem`,
+      category: `Educação`,
+      group: `pastores`,
+      date: '25/11/2022',
+      createDate: '25/11/2022',
+      status: `aguardando`,
+      link: `https://google.com`,
     },
     {
-      eventName: `Ǹome do evento`,
-      eventLiteDescription: `descrição do evento`,
-      eventCategory: `Ensino`,
-      eventGroup: `pastores`,
-      eventDate: '25/11/2022',
+      name: `Evento 01`,
+      liteDescription: `Ipsum lorem`,
+      category: `Educação`,
+      group: `pastores`,
+      date: '25/11/2022',
+      createDate: '25/11/2022',
+      status: `aguardando`,
+      link: `https://google.com`,
     },
   ];
 }
