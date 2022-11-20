@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+<nav
+  class="navbar navbar-expand-lg fixed-top"
+  style="background-color: #16519e"
+>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Event Manager</a>
+    <a class="navbar-brand text-white" href="#">Event Manager</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,33 +18,41 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Início</a>
+          <a class="nav-link active text-white" aria-current="page" href="/"
+            >Início</a
+          >
+        </li>
+        <li class="nav-item teste">
+          <a
+            class="nav-link active teste text-white"
+            aria-current="page"
+            href="/"
+            >Eventos</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Eventos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Sobre</a>
+          <a class="nav-link active text-white" aria-current="page" href="/"
+            >Sobre</a
+          >
         </li>
       </ul>
 
-      <form class="d-flex" role="search">
+      <form class="d-flex text-center" role="search">
         <input
           class="form-control me-2"
           type="search"
-          placeholder="Search"
-          aria-label="Search"
+          placeholder="Pesquise aqui..."
+          aria-label="Pesquisar"
         />
-        <button class="btn btn-outline-success basicMargin" type="submit">
+        <button class="btn btn-light basicMargin" type="submit">
           Pesquisar
         </button>
       </form>
-      <button type="button" class="btn btn-primary basicMargin">Entrar</button>
+
+      <button type="button" class="btn btn-success basicMargin">Entrar</button>
       <button type="button" class="btn btn-warning basicMargin">
         Registre-se
       </button>
     </div>
   </div>
 </nav>
-
-

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 .list-group {
   margin-top: 5rem;
   color: transparent;
@@ -16,4 +17,13 @@ ul {
 .pagination {
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.textJustify {
+  text-align: justify;
+}
+
+.teste {
+  text-align: center;
 }

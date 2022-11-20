@@ -1,21 +1,45 @@
-<div class="list-group container">
+<div class="list-group container-fluid">
+  <select
+    class="form-select rounded float-end"
+    aria-label="Default select example"
+  >
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
   <ul>
     <li *ngFor="let event of events">
       <a
-        href="{{ event.link }}"
+        href="{{url}}/{{ event.namegit  }}"
         class="list-group-item list-group-item-action flex-column align-items-start"
       >
         <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">{{ event.name }}</h5>
+          <h5 class="text-center">{{ event.name }}</h5>
           <small> Data do evento: {{ event.date }}</small>
         </div>
-        <p class="mb-1">
-          {{ event.liteDescription }}
-        </p>
-        <p class="smallText"><b>Categoria:</b> {{ event.category }}.</p>
-        <p class="smallText">
-          <b> Podem participar (grupo):</b> {{ event.group }}.
-        </p>
+
+        <div class="">
+          <img
+            src="../../../assets//galeria_06m.webp"
+            class="img-thumbnail rounded float-start"
+            alt="..."
+          />
+        </div>
+
+        <div class="">
+          <p class="mb-1 textJustify">
+            {{ event.liteDescription }}
+          </p>
+          <br />
+          <p class="smallText text-start">
+            <b>Categoria:</b> {{ event.category }}.
+          </p>
+          <p class="smallText text-start">
+            <b> Podem participar (grupo):</b> {{ event.group }}.
+          </p>
+        </div>
       </a>
     </li>
   </ul>
