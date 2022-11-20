@@ -1,0 +1,17 @@
+.smallText {
+  font-size: 0.8em;
+}
+.list-group {
+  margin-top: 5git rem;
+  color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pagination {
+  align-items: center;
+  justify-content: center;
+}

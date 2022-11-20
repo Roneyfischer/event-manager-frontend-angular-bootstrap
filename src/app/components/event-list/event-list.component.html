@@ -1,0 +1,32 @@
+<div class="list-group container">
+  <ul>
+    <li *ngFor="let event of events">
+      <a
+        href="#"
+        class="list-group-item list-group-item-action flex-column align-items-start"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ event.eventName }}</h5>
+          <small> Data do evento: {{ event.eventDate }}</small>
+        </div>
+        <p class="mb-1">
+          {{ event.eventLiteDescription }}
+        </p>
+        <p class="smallText"><b>Categoria:</b> {{ event.eventCategory }}.</p>
+        <p class="smallText">
+          <b> Podem participar (grupo):</b> {{ event.eventGroup }}.
+        </p>
+      </a>
+    </li>
+  </ul>
+
+  <nav class="pagination" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Pŕoxima</a></li>
+    </ul>
+  </nav>
+</div>
